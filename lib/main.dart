@@ -109,6 +109,8 @@ class _MyAppState extends State<MyApp> {
         name = idToken['name'];
         picture = profile['picture'];
       });
+
+      print('Response Body: ' + result.toString());
     } catch (e, s) {
       print('login error: $e - stack: $s');
 
